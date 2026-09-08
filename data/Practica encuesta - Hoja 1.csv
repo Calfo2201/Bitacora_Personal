@@ -1,0 +1,24 @@
+,,,,,,,,,,,,
+Variable,Tipo,Valores,Faltante,Pregunta,,,,,,,,
+id,entero,"1, 2, ...",no admite,(no se pregunta; se asigna automáticamente),,,,,,,,
+frecuencia,ordinal,Nunca < 1 a 3 veces < 4 a 8 veces < Más de 8 veces,NA,"¿Con qué frecuencia visitó la cafetería de la
+ facultad en el último mes?",,,,,,,,
+"prod_cafe, prod_comida, prod_frias, prod_otros",binaria (x4),"0, 1",NA si frecuencia = Nunca,"¿Qué productos consume habitualmente en la
+ cafetería? (marque todos los que correspondan:
+ Café / Comida / Bebidas frías / Otros)",,,,,,,,
+atencion,ordinal,1 < 2 < 3 < 4 < 5,NA si frecuencia = Nunca,"En una escala de 1 (muy mala) a 5 (muy buena),
+ ¿cómo calificaría la atención recibida?",,,,,,,,
+"pago_efectivo, pago_tarjeta, pago_transferencia",binaria (x3),"0, 1",NA si frecuencia = Nunca,"¿Qué método(s) de pago utiliza habitualmente?
+ (marque todos los que correspondan: 
+Efectivo / Tarjeta / Transferencia)",,,,,,,,
+estudiante,binaria,"TRUE, FALSE",NA,¿Es usted estudiante de la facultad?,,,,,,,,
+edad,cuantitativa,años,NA,¿Qué edad tiene?,,,,,,,,
+mejora,texto,libre,vacío,"¿Qué sugerencia de mejora tiene para la
+ cafetería? (opcional)",,,,,,,,
+,,,,,,,,,,,,
+id,frecuencia,prod_cafe,prod_comida,prod_frias,prod_otros,atencion,pago_efectivo,pago_tarjeta,pago_transferencia,estudiante,edad,mejora
+1,4 a 8 veces,1,0,1,0,4,1,0,0,TRUE,21,Más variedad de opciones veganas
+2,Nunca,NA,NA,NA,NA,NA,NA,NA,NA,FALSE,35,
+3,1 a 3 veces,1,1,0,0,3,0,1,0,TRUE,19,Reducir precios
+4,Más de 8 veces,1,1,1,1,5,0,0,1,FALSE,45,
+5,4 a 8 veces,0,1,0,1,2,1,1,0,TRUE,23,Más horarios de atención
